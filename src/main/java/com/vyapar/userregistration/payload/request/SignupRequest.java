@@ -20,18 +20,20 @@ public class SignupRequest {
     private String username;
     private String firstname;
     private String lastname;
+    private String password;
     private String gender;
-    private Date dateofbirth;
+    private Date dateOfBirth;
     private int age;
     private Set<String> roles;
-    private String emailid;
-    private Long primarymobilenumber;
-    private Long secondarymobilenumber;
-    private String addressline1;
-    private String addressline2;
+    private String email;
+    private Long primaryMobileNumber;
+    private Long secondaryMobileNumber;
+    private String addressLine1;
+    private String addressLine2;
     private String  state;
     private String city;
     private String country;
-    private int pincode;
+    private int pinCode;
+
 
 }

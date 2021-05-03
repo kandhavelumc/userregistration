@@ -1,0 +1,14 @@
+server:
+  port: 8091
+
+
+app:
+  jwtSecret: bezKoderSecretKey
+  jwtExpirationMs: 86400000
+
+spring:
+  application:
+    name: user-registration
+  data:
+    mongodb:
+      uri: mongodb+srv://dbUser:dbPassword@cluster0.j4mdv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

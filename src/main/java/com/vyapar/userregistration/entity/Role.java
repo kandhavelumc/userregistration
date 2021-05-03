@@ -8,14 +8,15 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 
-@Document(collection = "role")
+@Document(collection = "roles")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 public class Role {
     @Id
     private String id;
-    @NotBlank
-    private ERole role;
+    @NotEmpty(message = "Role cannot be empty")
+    private ERole name;
 }
